@@ -7,8 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
-    <title>My Portfolio</title>
-    
+    <title>Connor Rhoades</title>
+
     <!--Template based on URL below-->
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
 
@@ -16,53 +16,125 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Place your stylesheet here-->
-    <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--Social button CSS-->
+    <link rel="stylesheet" href="css/bootstrap-social.css" type="text/css">
+
 </head>
 
-<body>
-
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <!--
-    <a class="sudoku" href="sudoku.html">Sudoku Puzzle</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    -->
-
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item sudoku">
-                <a class="nav-link " href="sudoku.html">Sudoku Puzzles<span class="sr-only">(current)</span></a>
+            <li class="nav-item bio">
+                <a class="nav-link" href=#bio>Bio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item research">
-                <a class="nav-link disabled" href="#">Research</a>
+                <a class="nav-link" href=#research>Research</a>
             </li>
             <li class="nav-item classwork">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Classwork</a>
+                <a class="nav-link" href=#coursework tabindex="-1" aria-disabled="true">Coursework</a>
             </li>
             <li class="nav-item app">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Hypothetical App Idea</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Projects</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                <a class="nav-link" href=#projects tabindex="-1" aria-disabled="true">Projects</a>
             </li>
         </ul>
     </div>
+    
+    <div class="social">
+        <div class="social-buttons">
+            <a class="btn btn-social-icon btn-github" href="https://github.com/clrhoades1">
+                <span class="fa fa-github"></span>
+            </a>
+            <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/connor.rhoades.5">
+                <span class="fa fa-facebook"></span>
+            </a>
+            <a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/connor_rhoades/">
+                <span class="fa fa-instagram"></span>
+            </a>
+            <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/clrhoades1">
+                <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/connor-rhoades-91b389184/">
+                <span class="fa fa-linkedin"></span>
+            </a>
+        </div>
+        <!--/.social-buttons-->
+    </div>
+
 </nav>
 
-    <main role="main" class="container">
+<body>
+    <div class="portfolio-container">
+        <div id="bio">
+            <div class="grid-section" id="portfolio-picture">
+                <figure id="portfolio-picture">
+                    <img src="pictures/portraits/color_enhanced_portrait.jpg" class="portrait-shot" alt="My Portfolio Picture">
+                </figure>
+            </div>
+            <!--/.grid-section-->
+            <!--/.portfolio-picture-->
 
-        <div class="text-center mt-5 pt-5">
-            <h1>My Main Portfolio Page</h1>
-            <p class="lead">This should be cool :D<br> Random Words</p>
+
+            <div class="grid-section" id="portfolio-name">
+                <h1>Connor Rhoades</h1>
+                <div class="titles">
+                    Student | Researcher | Software Developer
+                </div>
+            </div>
+            <!--/.grid-section-->
+            <!--portfolio-name-->
+            
+            <div class="grid-section" id="portfolio-bio">
+                I'm Connor, a student at East Carolina University in North Carolina working towards my Computer Science degree. During my studies, I found my love for programming and learning while being given the ability to continue growing via side projects and research. 
+            </div>
+            <!--/.grid-section-->
+            <!--portfolio-bio-->
+
+
         </div>
+        <!--/.bio-->
 
-    </main><!-- /.container -->
+        <div id="research">
+            <p>Research Section</p>
+            <p>Maybe I can talk about different technologies and stuff I used instead? It kinda depends on how the research works out...maybe experience is better. Kinda depends on how it all shapes out. </p>
+        </div>
+        <!--/.research-->
+        
+        <div id="coursework">
+            <p>Coursework Section</p>
+        </div>
+        <!--/.coursework-->
+        
+        <div id="projects">
+            <p>Projects Section</p>
+        </div>
+        <!--/.projects-->
+    </div>
+    <!--/.portfolio-container-->
+
+
+    <!-- 
+    FOR EXPERIMENTATION 
+
+    <div class="grid-container">
+          <div class="grid-item" id="special-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+          <div class="grid-item">7</div>
+          <div class="grid-item">8</div>
+          <div class="grid-item">9</div>
+    </div>
+
+     FOR EXPERIMENTATION 
+    -->
 
 
     <!-- Bootstrap core JavaScript
@@ -73,4 +145,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
+
+<footer>
+
+</footer>
+
 </html>

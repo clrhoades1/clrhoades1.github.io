@@ -1,17 +1,132 @@
 /*
-.container {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 12%;
-    top: 30px;
-    border: 3px solid #73AD21;
-    background: black;
+
+PERSONAL REMINDERS
+----------------------------------
+.container = class selector
+#container = id selector
+* = all elements
+----------------------------------
+
+*/
+
+
+body {
+    padding-top: 55px;
 }
 
-table, th, td {
-    align-content: center;
-    border: 1px solid black;
-    background: blue;
+footer {
+    display: grid;
+    background-color: aquamarine;
 }
+
+#portfolio-picture {
+    grid-area: portrait;
+    background-color: aliceblue;
+}
+
+#page-content {
+    grid-area: content;
+}
+
+#portfolio-name {
+    padding-top: 10%;
+    grid-area: name;
+    text-align: center;
+}
+
+#portfolio-bio {
+    padding-top: 55px;
+}
+
+#research {
+    padding-top: 55px;
+    background-color: aquamarine;
+}
+
+#coursework {
+    padding-top: 55px;
+    background-color: aquamarine;
+}
+
+#projects {
+    padding-top: 55px;
+    background-color: aquamarine;
+}
+
+.titles {
+    padding-top: 13%;
+    font-size: 16px;
+}
+
+.portfolio-container {
+    /*display: grid;
+    
+    
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr 1fr;
+    
+    
+    grid-template-areas: 
+        'portrait name name'
+        'portrait content content'
+        'portrait content content';
+    */
+}
+
+.grid-section {
+    background-color: aquamarine;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+
+.portrait-shot {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.social {
+    display: grid;
+}
+
+.social-buttons {
+    text-align: right;
+    font-size: 1px;
+}
+
+/*
+
+FOR EXPERIMENTATION 
+
+#special-item {
+    grid-area: myArea;
+}
+
+.grid-container {
+    display: grid;
+    
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'myArea myArea . . .'
+        'myArea myArea . . .';
+    background-color: #2196F3;
+}
+
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+END OF EXPERIMENTATION
+
 */
