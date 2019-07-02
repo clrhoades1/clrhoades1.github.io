@@ -9,45 +9,115 @@ PERSONAL REMINDERS
 
 */
 
-@media (min-width: 400px) {
-/*    #bio {
+@media (max-width: 665px) { /* 574 */
+    .portfolio_container {
+        display: flex;
+        flex-direction: column;
+        max-height: 100vh;
+    }
+    
+    #bio {
         display: grid;
 
-        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
 
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr;
-        
+        grid-template-rows: 3fr 1fr;
+
         grid-template-areas: 
         'portrait'
         'name';
+    }   
+    
+    #picture-container {
+        grid-area: portrait;
+        background-color: white;
+        max-height: 75vh;
+/*        max-height: 100vh;*/
+/*        min-height: 100vh;*/
+        padding-top: 45px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    #personal-details {
+        
+    }
+    
+    #portfolio-name {
+        text-align: center;
+        grid-area: name; 
+/*        background-color: brown;*/
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #portfolio-picture-area {
+        /*
+        This means all the child elements will get the starting coordinates (origins) from where this DIV starts.
+        */
+        position: relative;
+        
+/*        display: inline-block;*/
+        
+        overflow: hidden;
+        
+        margin: 0;
+        
+        padding: 0px;
+        
+        height: 100%;
+        width: 100%; 
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     #portrait-shot {
-/*        display: block;*/
-/*  Uncomment      grid-area: portrait;*/
-/*  Uncomment      max-width: 30%;*/
-/*        max-height: 70vh;*/
-/*        object-fit: cover;*/
-/*  Uncomment      border-radius: 50%;*/
+        display: block;
+        max-width: 100%;
+        max-height: 65vh;
+        object-fit: cover;
+        border-radius: 50%;
+        position: relative;
+        padding-top: 10px;
+        
 /*
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: auto;
-        margin-right: auto;
+        min-height: 100%;
+        min-width: 100%;
+        
+        transform: translate(-50%, -50%);
+        
+        top: 50%;
+        left: 50%;
 */
-
-/*}
+ 
     }
-
-    #personal_details {
-        grid-area: name;
-    }
-*/
-    
 }
 
-@media (min-width: 700px) {
+.nav-bar {
+    grid-area: nav;      /* added */
+}
+
+body {
+/*    padding-top: 55px;*/
+    display: grid;
+    grid-template-areas: /* added */
+        'nav'
+        'container';
+/*    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+    font-family: monospace;
+/*    font-family: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;*/
+}
+
+
+@media (min-width: 666px) { /* 575 */
     #bio {
         display: grid;
 
@@ -56,61 +126,47 @@ PERSONAL REMINDERS
         grid-template-columns: 1fr 1fr;
 
         grid-template-areas: 
-        'portrait name'
-        'portrait name'
-        'portrait name';
+            'portrait name'
+            'portrait name'
+            'portrait name';
+
+    }
+    
+    #picture-container {
+        grid-area: portrait;
+        background-color: white;
+        max-height: 100vh;
+        min-height: 100vh;
+        padding-top: 45px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
     
     #portfolio-name {
-        
-    }
-    
-    #personal-details {
-/*        padding-top: 20vh;*/
-/*        vertical-align: middle;*/
-    }
-    
-    
-}
-
-.nav-bar {
-    grid-area: nav;
-}
-
-body {
-/*    padding-top: 55px;*/
-    display: grid;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
-}
-
-#bio {
-        display: grid;
-
+        text-align: center;
+        grid-area: name;
         max-height: 100vh;
-
-        grid-template-columns: 1fr 1fr;
-
-        grid-template-areas: 
-        'portrait name'
-        'portrait name'
-        'portrait name';
-
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #portrait-shot {
+        display: block;
+        max-width: 100%;
+        max-height: 85vh;
+        object-fit: cover;
+        border-radius: 50%; 
+        position: relative;
+    }
 }
 
 .portfolio-container {
-    /*display: grid;
-    
-    
-    grid-template-rows: auto;
-    grid-template-columns: 2fr 1fr 1fr;
-    
-    
-    grid-template-areas: 
-        'portrait name name'
-        'portrait content content'
-        'portrait content content';
-    */
+    grid-area: container; /* Added
         
 }
 
@@ -120,61 +176,17 @@ body {
 /*    border: 1px solid rgba(0, 0, 0, 0.8);*/
 }
 
-#picture-container {
-    grid-area: portrait;
-    background-color: white;
-    max-height: 100vh;
-    min-height: 100vh;
-    padding-top: 45px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
 
 #portfolio-picture-area {
     position:relative;
     max-height: 100vh;
-/*
-    margin-top: 25%;
-    margin-bottom: 25%;
-    margin-left: auto;
-    margin-right: auto;
-*/
     
 }
 
 #portfolio-picture {
     
 /*    padding-top: 20vh;*/
-}
-
-#portrait-shot {
-    display: block;
-    max-width: 100%;
-    max-height: 85vh;
-    object-fit: cover;
-    border-radius: 50%;
-    position: relative;
-/*
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-*/
-/*    left: 12.5%;*/
-}
-
-#portfolio-name {
-    text-align: center;
-    grid-area: name;
-    max-height: 100vh;
-    min-height: 100vh;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #personal-details {
@@ -187,13 +199,16 @@ body {
     margin: auto;
     min-height: 200px;
     align-items: center;
-*/
-    /*margin-left: auto;
+
+    margin-left: auto;
     position: relative;
     top: 45%;
-    left: 55%;*/
+    left: 55%;
+*/
+/*
     margin-top: 50%;
-    margin-bottom: 50%;
+    margin-bottom: 50%;         I removed this trying to fix a different problem.
+*/
 } 
 
 #my-name {
@@ -207,7 +222,7 @@ body {
 
 #biography {
     text-align: center;
-    background-color: black;
+    background-color: rgb(52, 58, 64);
 }
 
 #portfolio-bio {
@@ -231,16 +246,70 @@ body {
     padding-top: 55px;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.8);
-    min-height: 100vh;
+/*    min-height: 100vh;*/
     text-align: center;
+    padding-bottom: 55px;
 }
 
-#coursework {
+#languages-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+#c-picture {
+    height: 200px;
+    width: 200px;
+}
+
+#python-picture {
+    height: 200px;
+    width: 200px;
+}
+
+#java-picture {
+    height: 200px;
+    width: 200px;
+}
+
+#webbased-picture {
+    height: 200px;
+    width: 200px;
+}
+
+#tech-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+#node-picture {
+    height: 200px;
+    width: 200px;
+}
+
+#jupyter-picture {
+    height: 200px;
+    width: 200px;
+}
+
+
+#keras-picture {
+    height: 200px;
+    width: 200px;
+}
+
+
+#contact {
     padding-top: 55px;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.8);
     min-height: 100vh;
     text-align: center;
+    position: relative;
 }
 
 #projects {
@@ -251,11 +320,156 @@ body {
     text-align: center;
 }
 
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 55px;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#github-link {
+    text-align: right;
+}
+
+#bot-project {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(52, 58, 64);
+    position: relative;
+}
+
+#bot-project:hover {
+    top: -10px;
+}
+
+#sudoku-project {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(52, 58, 64);
+    position: relative;
+}
+
+#sudoku-project:hover {
+    top: -10px;
+}
+
+#ml-project {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(52, 58, 64);
+    position: relative;
+}
+
+#ml-project:hover {
+    top: -10px;
+}
+
+/*
+Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif
+*/
+
+#bot-title {
+    padding-left: 5px;
+    color: white;
+    text-align: left;
+    font-family: monospace;
+}
+ 
+#sudoku-title {
+    padding-left: 5px;
+    color: white;
+    text-align: left;
+}
+
+#ml-title {
+    padding-left: 5px;
+    color: white;
+    text-align: left;
+}
+
+#bot-description {
+    padding-left: 5px;
+    padding-top: 10px;
+    width: 200px;
+}
+
+#sudoku-description {
+    padding-left: 5px;
+    padding-top: 10px;
+    width: 200px;
+}
+
+#bot-description-text-style {
+    color: white;
+    text-align: left;
+}
+
+#sudoku-description-text-style {
+    color: white;
+    text-align: left;
+}
+
+#bot-technologies {
+    display: flex; 
+/*    text-align: left;*/
+    justify-content: space-between;
+    bottom: 0;
+    height: 10%;
+    position: absolute;
+    width: 100%;
+}
+
+#sudoku-technologies {
+    display: flex; 
+/*    text-align: left;*/
+    justify-content: space-between;
+    bottom: 0;
+    height: 10%;
+    position: absolute;
+    width: 100%;
+}
+
+ul, li {
+    padding: 0px;
+/*
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+*/
+    margin: 0px;
+/*
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+*/
+    
+    list-style: outside none none;
+    list-style-position: outside;
+    list-style-image: none;
+    list-style-type: none;
+    color: white;
+    float: left;
+    padding-left: 10px;
+}
+
 .social {
     display: grid;
 }
 
-.social-buttons {
-    text-align: right;
+#social-buttons {
+    text-align: center;
     font-size: 1px;
+    background-color: rgb(52, 58, 64);
+    display: flex; 
+    justify-content: center;
+    bottom: 0;
+/*    height: 10%;*/
+    position: absolute;
+    width: 100%;
 }
