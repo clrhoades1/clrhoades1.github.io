@@ -307,7 +307,7 @@ body {
     padding-top: 55px;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.8);
-    min-height: 100vh;
+    height: 100vh;
     text-align: center;
     position: relative;
 }
@@ -337,7 +337,7 @@ body {
 
 #bot-project {
     height: 300px;
-    width: 300px;
+    width: 250px;
     background-color: rgb(52, 58, 64);
     position: relative;
 }
@@ -348,7 +348,7 @@ body {
 
 #sudoku-project {
     height: 300px;
-    width: 300px;
+    width: 250px;
     background-color: rgb(52, 58, 64);
     position: relative;
 }
@@ -359,7 +359,7 @@ body {
 
 #ml-project {
     height: 300px;
-    width: 300px;
+    width: 250px;
     background-color: rgb(52, 58, 64);
     position: relative;
 }
