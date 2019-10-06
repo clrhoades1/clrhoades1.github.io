@@ -303,7 +303,7 @@ body {
 }
 
 
-#contact {
+#blog {
     padding-top: 55px;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -345,6 +345,18 @@ body {
 #bot-project:hover {
     top: -10px;
 }
+
+#react-calc-project {
+    height: 300px;
+    width: 250px;
+    background-color: rgb(52, 58, 64);
+    position: relative;
+}
+
+#react-calc-project:hover {
+    top: -10px;
+}
+
 
 #sudoku-project {
     height: 300px;
@@ -391,6 +403,12 @@ Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFon
     text-align: left;
 }
 
+#react-title {
+    padding-left: 5px;
+    color: white;
+    text-align: left;
+}
+
 #bot-description {
     padding-left: 5px;
     padding-top: 10px;
@@ -398,6 +416,17 @@ Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFon
 }
 
 #sudoku-description {
+    padding-left: 5px;
+    padding-top: 10px;
+    width: 200px;
+}
+
+#calc-description {
+    padding-left: 5px;
+    padding-top: 10px;
+    width: 200px;
+}
+#ml-description {
     padding-left: 5px;
     padding-top: 10px;
     width: 200px;
@@ -412,6 +441,17 @@ Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFon
     color: white;
     text-align: left;
 }
+
+#calc-description-text-style {
+    color: white;
+    text-align: left;
+}
+
+#ml-description-text-style {
+    color: white;
+    text-align: left;
+}
+
 
 #bot-technologies {
     display: flex; 
