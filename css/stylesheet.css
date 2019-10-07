@@ -338,7 +338,7 @@ body {
 #portfolio-bio {
     padding-top: 55px;
     grid-area: bio;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+/*    border: 1px solid rgba(0, 0, 0, 0.8);*/
     min-height: 100vh;
     padding-left: 80px;
     padding-right: 80px;
@@ -355,7 +355,7 @@ body {
 #technologies {
     padding-top: 55px;
     background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+/*    border: 1px solid rgba(0, 0, 0, 0.8);*/
 /*    min-height: 100vh;*/
     text-align: center;
     padding-bottom: 55px;
@@ -367,7 +367,7 @@ body {
 #blog {
     padding-top: 55px;
     background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+/*    border: 1px solid rgba(0, 0, 0, 0.8);*/
     height: 100vh;
     text-align: center;
     position: relative;
@@ -377,7 +377,7 @@ body {
     padding-top: 55px;
     background-color: white;
     min-height: 100vh;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-top: 2px solid rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 
@@ -594,6 +594,6 @@ ul, li {
     justify-content: center;
     bottom: 0;
 /*    height: 10%;*/
-    position: absolute;
+/*    position: absolute;*/
     width: 100%;
 }
