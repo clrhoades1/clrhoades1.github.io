@@ -98,6 +98,63 @@ PERSONAL REMINDERS
         left: 50%;
 */
  
+        
+    }
+    
+    #languages-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+    #c-picture {
+        height: 100px;
+        width: 100px;
+    }
+
+    #python-picture {
+        height: 100px;
+        width: 100px;
+    }
+
+    #java-picture {
+        height: 100px;
+        width: 100px;
+    }
+
+    #webbased-picture {
+        height: 100px;
+        width: 100px;
+    }
+
+    #tech-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+
+    #node-picture {
+        height: 100px;
+        width: 100px;
+    }
+
+    #jupyter-picture {
+        height: 100px;
+        width: 100px;
+    }
+
+
+    #keras-picture {
+        height: 100px;
+        width: 100px;
+    }
+    
+    #react-picture {
+        height: 100px;
+        width: 100px;
     }
 }
 
@@ -106,18 +163,15 @@ PERSONAL REMINDERS
 }
 
 body {
-/*    padding-top: 55px;*/
     display: grid;
     grid-template-areas: /* added */
         'nav'
         'container';
-/*    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
     font-family: monospace;
-/*    font-family: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;*/
 }
 
 
-@media (min-width: 666px) { /* 575 */
+@media (min-width: 666px) { 
     #bio {
         display: grid;
 
@@ -162,6 +216,62 @@ body {
         object-fit: cover;
         border-radius: 50%; 
         position: relative;
+    }
+    
+    #languages-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+
+    #c-picture {
+        height: 200px;
+        width: 200px;
+    }
+
+    #python-picture {
+        height: 200px;
+        width: 200px;
+    }
+
+    #java-picture {
+        height: 200px;
+        width: 200px;
+    }
+
+    #webbased-picture {
+        height: 200px;
+        width: 200px;
+    }
+
+    #tech-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+
+    #node-picture {
+        height: 200px;
+        width: 200px;
+    }
+
+    #jupyter-picture {
+        height: 200px;
+        width: 200px;
+    }
+
+
+    #keras-picture {
+        height: 200px;
+        width: 200px;
+    }
+    
+    #react-picture {
+        height: 200px;
+        width: 200px;
     }
 }
 
@@ -251,56 +361,7 @@ body {
     padding-bottom: 55px;
 }
 
-#languages-container {
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-    flex-wrap: wrap;
-}
 
-#c-picture {
-    height: 200px;
-    width: 200px;
-}
-
-#python-picture {
-    height: 200px;
-    width: 200px;
-}
-
-#java-picture {
-    height: 200px;
-    width: 200px;
-}
-
-#webbased-picture {
-    height: 200px;
-    width: 200px;
-}
-
-#tech-container {
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-    flex-wrap: wrap;
-    padding-top: 40px;
-}
-
-#node-picture {
-    height: 200px;
-    width: 200px;
-}
-
-#jupyter-picture {
-    height: 200px;
-    width: 200px;
-}
-
-
-#keras-picture {
-    height: 200px;
-    width: 200px;
-}
 
 
 #blog {
@@ -340,6 +401,9 @@ body {
     width: 250px;
     background-color: rgb(52, 58, 64);
     position: relative;
+    
+    padding: 5px;
+    margin: 5px;
 }
 
 #bot-project:hover {
@@ -351,6 +415,9 @@ body {
     width: 250px;
     background-color: rgb(52, 58, 64);
     position: relative;
+     
+    padding: 5px;
+    margin: 5px;
 }
 
 #react-calc-project:hover {
@@ -363,6 +430,9 @@ body {
     width: 250px;
     background-color: rgb(52, 58, 64);
     position: relative;
+     
+    padding: 5px;
+    margin: 5px;
 }
 
 #sudoku-project:hover {
@@ -374,6 +444,9 @@ body {
     width: 250px;
     background-color: rgb(52, 58, 64);
     position: relative;
+     
+    padding: 5px;
+    margin: 5px;
 }
 
 #ml-project:hover {
@@ -472,6 +545,17 @@ Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFon
     position: absolute;
     width: 100%;
 }
+
+#calc-technologies {
+    display: flex; 
+/*    text-align: left;*/
+    justify-content: space-between;
+    bottom: 0;
+    height: 10%;
+    position: absolute;
+    width: 100%;
+}
+
 
 ul, li {
     padding: 0px;
