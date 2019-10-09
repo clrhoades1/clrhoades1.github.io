@@ -447,6 +447,7 @@ body {
      
     padding: 5px;
     margin: 5px;
+    overflow: hidden;
 }
 
 #ml-project:hover {
@@ -547,6 +548,16 @@ Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFon
 }
 
 #calc-technologies {
+    display: flex; 
+/*    text-align: left;*/
+    justify-content: space-between;
+    bottom: 0;
+    height: 10%;
+    position: absolute;
+    width: 100%;
+}
+
+#ml-technologies {
     display: flex; 
 /*    text-align: left;*/
     justify-content: space-between;
